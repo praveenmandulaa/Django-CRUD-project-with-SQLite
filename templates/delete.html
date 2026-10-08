@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block content %}<h1>Delete this task?</h1><section class="panel form-panel"><p><strong>{{ object.title }}</strong> will be permanently removed.</p><form method="post">{% csrf_token %}<div class="form-actions"><button class="delete-button">Delete task</button><a href="{% url 'dashboard' %}">Cancel</a></div></form></section>{% endblock %}
